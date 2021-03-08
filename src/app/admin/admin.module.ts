@@ -9,11 +9,12 @@ import { MatTableModule } from '@angular/material/table';
 import { ProvidersService } from './services/providers.service';
 import { HttpClientModule } from '@angular/common/http';
 import { MatSortModule } from '@angular/material/sort';
+import { ProviderEditComponent } from './provider-edit/provider-edit.component';
 
 const materialImports = [MatButtonModule, MatTableModule, MatSortModule];
 
 @NgModule({
-  declarations: [DashboardComponent, ProvidersComponent, AdminComponent],
+  declarations: [DashboardComponent, ProvidersComponent, AdminComponent, ProviderEditComponent],
   imports: [
     CommonModule,
     AdminRoutingModule,
